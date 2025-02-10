@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -17,18 +18,27 @@ class ResultActivity : AppCompatActivity() {
         val tvClassificacao = findViewById<TextView>(R.id.tv_classificacao)
         tvResult.text = result.toString()
 
-        val classificacao: String = if (result <= 18.5f) {
-            "MAGREZA"
+        val classificacao: String
+        val corTexto: Int
+
+        if (result <= 18.5f) {
+            classificacao = "MAGREZA"
+            corTexto = Color.BLUE
         } else if (result > 18.5f && result <= 24.9f) {
-            "NORMAL"
+            classificacao = "NORMAL"
+            corTexto = Color.GREEN
         } else if (result > 25f && result <= 29.9f) {
-            "SOBREPESO"
+            classificacao = "SOBREPESO"
+            corTexto = Color.YELLOW
         } else if (result > 30f && result <= 39.9f) {
-            "OBESIDADE"
+            classificacao = "OBESIDADE"
+            corTexto = Color.RED
         } else {
-            "OBESIDADE GRAVE"
+            classificacao = "OBESIDADE GRAVE"
+            corTexto = Color.RED
         }
 
         tvClassificacao.text = classificacao
+        tvClassificacao.setTextColor(corTexto)
     }
 }

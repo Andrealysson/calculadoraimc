@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
             val alturaStr: String = edtAltura.text.toString()
 
             if (pesoStr == "" || alturaStr == "") {
-                //Mostrar mensagem para o usuario
 
                 Snackbar.
                  make(
@@ -44,9 +43,6 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(KEY_RESULT_IMC, resultado)
                 startActivity(intent)
 
-                // Cores
-                // EditText background + icone
-                /// Gradient + icone + titulo + descrição
 
             }
 
