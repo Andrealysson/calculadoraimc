@@ -1,19 +1,31 @@
 # Calculadora IMC
-Desc
+Este projeto é uma calculadora de IMC que desenvolvi enquanto aprendia Kotlin. Com ele, você pode inserir seu peso e altura para calcular automaticamente o IMC e ver em qual classificação você se encaixa.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
+<img src="https://github.com/user-attachments/assets/4ca22931-d132-469d-832e-c7c4d322ea77" width=200/> <img src="https://github.com/user-attachments/assets/3b2198ec-07ff-42d0-9276-722a0182dc30" width=200/>
+
 Screenshots
 
 ## Tecnologias
-Techs
+- Activity
+- Intent
+- Snackbar
+- ViewGroup
+  - LinearLayout
+  - ConstrantLayout
+- Views
+  - ImagenView
+  - TextView
+  - EditText
+  - Button
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2025 Roque Buarque Junior
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
